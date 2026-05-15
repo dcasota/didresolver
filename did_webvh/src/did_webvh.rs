@@ -37,6 +37,8 @@ pub const DID_LOG_ENTRY_PARAMETERS: &str = "parameters";
 pub const DID_LOG_ENTRY_STATE: &str = "state";
 pub const DID_LOG_ENTRY_PROOF: &str = "proof";
 
+pub const SUPPORTED_SWISS_PROFILE_VERSIONS: [&str; 1] = ["swiss-profile-anchor:1.0.0"];
+
 /// Regex to check if a domain follows the assumption described in https://www.rfc-editor.org/rfc/rfc952.html
 /// Allowed are lowercase letters (a-z), digits (0-9) dash (-) and period (.). Periods are only allowed to
 /// delimit components.
@@ -700,6 +702,14 @@ impl WebVerifiableHistoryDidLog {
                 .did_doc
                 .validate()
                 .map_err(|err| DidResolverError::InvalidDidDocument(err.to_string()))?;
+
+            if let Some(profile_version) = entry.did_doc.get_profile_version() {
+                if !SUPPORTED_SWISS_PROFILE_VERSIONS.contains(&profile_version.as_str()) {
+                    return Err(DidResolverError::InvalidDidDocument("Defined profile_version is not supported.".to_owned()))
+                }
+            } else {
+                return Err(DidResolverError::InvalidDidDocument("Missing 'profile_version` entry in DID document.".to_owned()))
+            }
 
             if expected_version_index == 1 {
                 // Verify that the SCID is correct

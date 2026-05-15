@@ -286,30 +286,6 @@ mod test {
         "did:webvh:Qmdcnp8gJuuFhkh6JpyVCiywenKMzfUhwEhQ7GyhE428ud:identifier-reg.trust-infra.swiyu-int.admin.ch:api:v1:did:18fa7c77-9dd1-4e20-a147-fb1bec146085"
     )]
     #[case(
-        "test_data/generated_by_didtoolbox_java/legacy/did-1.6.0.jsonl",
-        "did:webvh:QmbaKJvtKkTcCauESXS4gUAAASzzXtqrdeNvoQnWwjok8s:identifier-reg.trust-infra.swiyu-int.admin.ch:api:v1:did:18fa7c77-9dd1-4e20-a147-fb1bec146085"
-    )]
-    #[case(
-        "test_data/generated_by_didtoolbox_java/legacy/did-1.7.0.jsonl",
-        "did:webvh:Qmcgqn6eefobPML8QKjs4wh12MiS1SR59qGsK9i5rctcQb:identifier-reg.trust-infra.swiyu-int.admin.ch:api:v1:did:18fa7c77-9dd1-4e20-a147-fb1bec146085"
-    )]
-    #[case(
-        "test_data/generated_by_didtoolbox_java/legacy/did-1.8.0.jsonl",
-        "did:webvh:QmT4kPBFsHpJKvvvxgFUYxnSGPMeaQy1HWwyXMHj8NjLuy:identifier-reg.trust-infra.swiyu-int.admin.ch:api:v1:did:18fa7c77-9dd1-4e20-a147-fb1bec146085"
-    )]
-    #[case(
-        "test_data/generated_by_didtoolbox_java/legacy/did-1.9.0.jsonl",
-        "did:webvh:QmUwKKQdRTYkqiBHT9iHszqfbEbFiEV8Bn8TQ6AeW74SXR:identifier-reg.trust-infra.swiyu-int.admin.ch:api:v1:did:18fa7c77-9dd1-4e20-a147-fb1bec146085"
-    )]
-    #[case(
-        "test_data/generated_by_didtoolbox_java/legacy/did-1.9.1.jsonl",
-        "did:webvh:QmfFqZxgYVhDJERRVbJ56w7NC1g6ZLvVwnd7nJHMU4oBcs:identifier-reg.trust-infra.swiyu-int.admin.ch:api:v1:did:18fa7c77-9dd1-4e20-a147-fb1bec146085"
-    )]
-    #[case(
-        "test_data/generated_by_didtoolbox_java/legacy/did-2.0.0.jsonl",
-        "did:webvh:QmVS5e48wgp9pw3j1fjgn2KAY5zDMvUVPrRyn4cvAYChTR:identifier-reg.trust-infra.swiyu-int.admin.ch:api:v1:did:18fa7c77-9dd1-4e20-a147-fb1bec146085"
-    )]
-    #[case(
         "test_data/generated_by_didtoolbox_java/v400_did.jsonl",
         "did:webvh:QmT4kPBFsHpJKvvvxgFUYxnSGPMeaQy1HWwyXMHj8NjLuy:identifier-reg.trust-infra.swiyu-int.admin.ch:api:v1:did:18fa7c77-9dd1-4e20-a147-fb1bec146085"
     )]

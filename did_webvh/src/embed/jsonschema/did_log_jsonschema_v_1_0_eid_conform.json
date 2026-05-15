@@ -122,7 +122,8 @@
         }
       },
       "required": [
-        "id"
+        "id",
+        "profile_version"
       ],
       "additionalProperties": true
     },
